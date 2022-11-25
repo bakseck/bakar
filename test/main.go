@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"piscine"
+	"bakar"
 )
 
 func main() {
-	root := &piscine.TreeNode{Data: "4"}
-	piscine.BTreeInsertData(root, "1")
-	piscine.BTreeInsertData(root, "7")
-	piscine.BTreeInsertData(root, "5")
-	node := piscine.BTreeSearchItem(root, "1")
-	rplc := &piscine.TreeNode{Data: "3"}
-	root = piscine.BTreeTransplant(root, node, rplc)
-	piscine.BTreeApplyInorder(root, fmt.Println)
+	root := &bakar.TreeNode{Data: "4"}
+	bakar.BTreeInsertData(root, "1")
+	bakar.BTreeInsertData(root, "7")
+	bakar.BTreeInsertData(root, "5")
+	fmt.Println(root.Left.Data)
+	fmt.Println(root.Data)
+	fmt.Println(root.Right.Left.Data)
+	fmt.Println(root.Right.Data)
 }
