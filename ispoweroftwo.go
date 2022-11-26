@@ -1,0 +1,5 @@
+package bakar 
+
+func IsPowerOfTwo()  {
+	
+}
